@@ -15,7 +15,7 @@
 
 using namespace std;
 typedef tuple <int, int, int> Tuple;
-bool compare(const Tuple &left, const Tuple &right){// comparar resultados de equipos, complexity O(n)
+bool compare(const Tuple &left, const Tuple &right){
     if (get<1>(left) == get<1>(right)){ // Si coincide en numero resueltos, desempata en tiempo penalizado 
         if (get<2>(left) == get<2>(right)){ // Si coincide en tiempo, desempata en numero de equipo
             return get<0>(left) < get<0>(right);// Retorna el menor equipo
